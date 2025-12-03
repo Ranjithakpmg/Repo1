@@ -32,6 +32,6 @@ jobs:
     # Raw authentication to registries, defined as YAML objects
     registry-auth: # optional
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+      run: docker build . --file Dockerfile --tag global-docker-virtual/ubuntu
     - name: Push the docker image 
-    run: docker push my-image-name:$(date +%s)
+    run: docker push global-docker-virtual/ubuntu
